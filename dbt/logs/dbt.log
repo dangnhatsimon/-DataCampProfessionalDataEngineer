@@ -1,0 +1,115 @@
+[0m09:56:15.681509 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002B9072F3290>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002B907328200>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002B907329F70>]}
+
+
+============================== 09:56:15.684509 | fc0078ea-d8f3-4c7e-aa97-4950efb1bb99 ==============================
+[0m09:56:15.684509 [info ] [MainThread]: Running with dbt=1.8.7
+[0m09:56:15.685509 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'log_cache_events': 'False', 'write_json': 'True', 'partial_parse': 'True', 'cache_selected_only': 'False', 'warn_error': 'None', 'version_check': 'True', 'fail_fast': 'False', 'log_path': 'logs', 'profiles_dir': 'C:\\Users\\DO\\.dbt', 'debug': 'False', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'empty': 'None', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'invocation_command': 'dbt init', 'static_parser': 'True', 'introspect': 'True', 'target_path': 'None', 'log_format': 'default', 'send_anonymous_usage_stats': 'True'}
+[0m09:56:24.899486 [debug] [MainThread]: Starter project path: D:\Data Engineering\DataCamp Professional Data Engineer in Python\.venv\Lib\site-packages\dbt\include\starter_project
+[0m09:56:24.912484 [info ] [MainThread]: 
+Your new dbt project "test_project" was created!
+
+For more information on how to configure the profiles.yml file,
+please consult the dbt documentation here:
+
+  https://docs.getdbt.com/docs/configure-your-profile
+
+One more thing:
+
+Need help? Don't hesitate to reach out to us via GitHub issues or on Slack:
+
+  https://community.getdbt.com/
+
+Happy modeling!
+
+[0m09:56:24.913485 [info ] [MainThread]: Setting up your profile.
+[0m09:56:24.916484 [error] [MainThread]: Encountered an error:
+Runtime Error
+  No adapters available. Learn how to install an adapter by going to https://docs.getdbt.com/docs/connect-adapters#install-using-the-cli
+[0m09:56:24.917485 [debug] [MainThread]: Command `dbt init` failed at 09:56:24.917485 after 9.32 seconds
+[0m09:56:24.917485 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002B906B8CCB0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002B903DF4770>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002B9075AFC80>]}
+[0m09:56:24.918485 [debug] [MainThread]: Flushing usage events
+[0m09:59:30.893179 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000178CFBC62A0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000178CFCE31A0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000178CFCE3140>]}
+
+
+============================== 09:59:30.897178 | c734b863-ac66-480d-82bf-c9c65dad7dea ==============================
+[0m09:59:30.897178 [info ] [MainThread]: Running with dbt=1.8.7
+[0m09:59:30.898177 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'log_cache_events': 'False', 'write_json': 'True', 'partial_parse': 'True', 'cache_selected_only': 'False', 'warn_error': 'None', 'debug': 'False', 'version_check': 'True', 'log_path': 'logs', 'profiles_dir': 'C:\\Users\\DO\\.dbt', 'fail_fast': 'False', 'use_colors': 'True', 'use_experimental_parser': 'False', 'empty': 'None', 'quiet': 'False', 'no_print': 'None', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'invocation_command': 'dbt init', 'static_parser': 'True', 'introspect': 'True', 'target_path': 'None', 'log_format': 'default', 'send_anonymous_usage_stats': 'True'}
+[0m09:59:41.682508 [debug] [MainThread]: Starter project path: D:\Data Engineering\DataCamp Professional Data Engineer in Python\.venv\Lib\site-packages\dbt\include\starter_project
+[0m09:59:41.695507 [info ] [MainThread]: 
+Your new dbt project "test_project" was created!
+
+For more information on how to configure the profiles.yml file,
+please consult the dbt documentation here:
+
+  https://docs.getdbt.com/docs/configure-your-profile
+
+One more thing:
+
+Need help? Don't hesitate to reach out to us via GitHub issues or on Slack:
+
+  https://community.getdbt.com/
+
+Happy modeling!
+
+[0m09:59:41.697508 [info ] [MainThread]: Setting up your profile.
+[0m10:00:18.899358 [error] [MainThread]: Encountered an error:
+
+[0m10:00:18.901358 [error] [MainThread]: Traceback (most recent call last):
+  File "D:\Data Engineering\DataCamp Professional Data Engineer in Python\.venv\Lib\site-packages\dbt\cli\requires.py", line 138, in wrapper
+    result, success = func(*args, **kwargs)
+                      ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Data Engineering\DataCamp Professional Data Engineer in Python\.venv\Lib\site-packages\dbt\cli\requires.py", line 101, in wrapper
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Data Engineering\DataCamp Professional Data Engineer in Python\.venv\Lib\site-packages\dbt\cli\main.py", line 470, in init
+    results = task.run()
+              ^^^^^^^^^^
+  File "D:\Data Engineering\DataCamp Professional Data Engineer in Python\.venv\Lib\site-packages\dbt\task\init.py", line 347, in run
+    self.setup_profile(profile_name)
+  File "D:\Data Engineering\DataCamp Professional Data Engineer in Python\.venv\Lib\site-packages\dbt\task\init.py", line 263, in setup_profile
+    self.create_profile_from_target(adapter, profile_name=profile_name)
+  File "D:\Data Engineering\DataCamp Professional Data Engineer in Python\.venv\Lib\site-packages\dbt\task\init.py", line 180, in create_profile_from_target
+    self.create_profile_from_profile_template(profile_template, profile_name)
+  File "D:\Data Engineering\DataCamp Professional Data Engineer in Python\.venv\Lib\site-packages\dbt\task\init.py", line 164, in create_profile_from_profile_template
+    target = self.generate_target_from_input(prompts, initial_target)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Data Engineering\DataCamp Professional Data Engineer in Python\.venv\Lib\site-packages\dbt\task\init.py", line 130, in generate_target_from_input
+    target[key] = click.prompt(
+                  ^^^^^^^^^^^^^
+  File "D:\Data Engineering\DataCamp Professional Data Engineer in Python\.venv\Lib\site-packages\click\termui.py", line 164, in prompt
+    value = prompt_func(prompt)
+            ^^^^^^^^^^^^^^^^^^^
+  File "D:\Data Engineering\DataCamp Professional Data Engineer in Python\.venv\Lib\site-packages\click\termui.py", line 147, in prompt_func
+    raise Abort() from None
+click.exceptions.Abort
+
+[0m10:00:18.904358 [debug] [MainThread]: Command `dbt init` failed at 10:00:18.904358 after 48.09 seconds
+[0m10:00:18.904358 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000178CFBC44D0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000178CFAEE8A0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000178C9C03EC0>]}
+[0m10:00:18.905357 [debug] [MainThread]: Flushing usage events
+[0m10:21:26.909626 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002A148D6E9C0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002A14B6C3350>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002A14B6C33E0>]}
+
+
+============================== 10:21:26.912624 | 54caffde-8acc-4c82-b318-43e4fe0c30b9 ==============================
+[0m10:21:26.912624 [info ] [MainThread]: Running with dbt=1.8.7
+[0m10:21:26.913625 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'log_cache_events': 'False', 'write_json': 'True', 'partial_parse': 'True', 'cache_selected_only': 'False', 'warn_error': 'None', 'debug': 'False', 'fail_fast': 'False', 'log_path': 'logs', 'version_check': 'True', 'profiles_dir': 'C:\\Users\\DO\\.dbt', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'empty': 'None', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'introspect': 'True', 'invocation_command': 'dbt init', 'log_format': 'default', 'target_path': 'None', 'static_parser': 'True', 'send_anonymous_usage_stats': 'True'}
+[0m10:21:37.978104 [debug] [MainThread]: Starter project path: D:\Data Engineering\DataCamp Professional Data Engineer in Python\.venv\Lib\site-packages\dbt\include\starter_project
+[0m10:21:38.004552 [info ] [MainThread]: 
+Your new dbt project "nyc_yellow_taxi" was created!
+
+For more information on how to configure the profiles.yml file,
+please consult the dbt documentation here:
+
+  https://docs.getdbt.com/docs/configure-your-profile
+
+One more thing:
+
+Need help? Don't hesitate to reach out to us via GitHub issues or on Slack:
+
+  https://community.getdbt.com/
+
+Happy modeling!
+
+[0m10:21:38.006552 [info ] [MainThread]: Setting up your profile.
+[0m10:21:40.765801 [debug] [MainThread]: Command `dbt init` succeeded at 10:21:40.765801 after 13.94 seconds
+[0m10:21:40.766801 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002A14B9618E0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002A14B87BF20>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002A14A830B00>]}
+[0m10:21:40.766801 [debug] [MainThread]: Flushing usage events
