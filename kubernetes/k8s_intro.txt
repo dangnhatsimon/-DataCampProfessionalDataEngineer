@@ -1,0 +1,6 @@
+kubectl command is the main command in the Kubernetes realm. 
+"kubectl" or "kubectl help"
+
+To apply your first Kubernetes Manifest, enter kubectl apply -f plus the Manifest name on the command line.
+"kubectl apply -f first_manifest.yml"
+

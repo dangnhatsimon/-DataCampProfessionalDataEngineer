@@ -1,0 +1,9 @@
+Read events from the Kafka topic phishing-sites. Read all messages from the beginning of the topic, and then use control+c to exit.
+"bin/kafka-console-consumer.sh --topic phishing-sites --bootstrap-server localhost:9092 --from-beginning"
+
+Now let's assume your application can only handle 3 messages at a time. Modify your console command to read 3 messages and exit automatically.
+"bin/kafka-console-consumer.sh --topic phishing-sites --bootstrap-server localhost:9092 --from-beginning --max-messages 3"
+
+Watching live events
+REMOVED "--from-beginning" to view only the latest events as they occur.
+

@@ -1,0 +1,5 @@
+While starting your learning about Kafka, you want to see a list of topics stored within Kafka. You discover a command listed as follows:
+
+"bin/kafka-topics.sh --bootstrap-server localhost:9092 --list"
+
+This command is described as showing a list of topics available on a Kafka server.

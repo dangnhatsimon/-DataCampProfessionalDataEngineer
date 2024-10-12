@@ -1,0 +1,4 @@
+Writing to a topic
+NOTE: Use control+c to exit Kafka programs if required. Also, some programs may not return output.
+"bin/kafka-console-producer.sh --topic phishing-sites --bootstrap-server localhost:9092"
+
