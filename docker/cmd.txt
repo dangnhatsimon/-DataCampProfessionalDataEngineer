@@ -1,0 +1,7 @@
+# Overriding the default command
+# Overriding the start command of an image has many uses. 
+# One of them is testing or debugging something in an image that already has a start command with a specific use case.
+# the postgres image starts a database if you start it normally. To be able to dive into the image and look at configuration files or debug an issue you're having; 
+# you can start it with the bash command, an often available shell.
+docker run -it postgres bash
+

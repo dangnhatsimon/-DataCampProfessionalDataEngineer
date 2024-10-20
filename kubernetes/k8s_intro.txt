@@ -1,6 +1,11 @@
-kubectl command is the main command in the Kubernetes realm. 
+# kubectl command is the main command in the Kubernetes realm. 
 "kubectl" or "kubectl help"
 
-To apply your first Kubernetes Manifest, enter kubectl apply -f plus the Manifest name on the command line.
+# To apply your first Kubernetes Manifest, enter kubectl apply -f plus the Manifest name on the command line.
 "kubectl apply -f first_manifest.yml"
 
+# Check that the 5 Pods have been created. Note that each Pod has a unique, but random name.
+"kubectl get pods"
+
+# Delete the deployment using 
+"kubectl delete -f <your manifest>"

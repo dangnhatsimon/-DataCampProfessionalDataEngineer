@@ -1,0 +1,20 @@
+# The ARG Dockerfile instruction allows us to set a variable in a Dockerfile and then optionally override it when building an image. 
+# We've added a Dockerfile to your current working directory with the following instructions:
+FROM ubuntu
+ARG WELCOME_TEXT=Hello!
+RUN echo $WELCOME_TEXT
+CMD echo $WELCOME_TEXT
+
+
+docker build --build-arg WELCOME_TEXT=Welcome! .
+
+
+# Changing behavior when starting a container
+FROM ubuntu
+ARG WELCOME_TEXT=Hello!
+RUN echo $WELCOME_TEXT
+CMD echo $WELCOME_TEXT
+# Build the Dockerfile in your local working directory giving it the name hello_image
+docker build -t hello_image .
+# Start a container from the hello_image image you just made, but use a flag on the command to set the NAME ENV variable to your name
+docker run --env NAME=hello_image hello_image

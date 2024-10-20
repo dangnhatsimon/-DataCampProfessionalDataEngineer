@@ -1,0 +1,27 @@
+# Pulling image
+docker pull hello-world
+
+# see all images available on your machine.
+docker images
+
+# Cleaning up images
+docker image rm ubuntu
+
+# The ubuntu image failed to remove since it still has a container using it. To be sure you can clean up your images, remove all stopped containers.
+docker container prune
+
+# all stopped containers are removed, also remove all unused images.
+docker image prune -a 
+
+# tag the spam:v1 container so it can be pushed to docker.mycompany.com
+docker tag spam:v1 docker.mycompany.com/spam:v1
+
+# push the docker.mycompany.com/spam:v1 image to the docker.mycompany.com registry.
+docker push docker.mycompany.com/spam:v1
+
+#  to save spam:v2 to a file called spam_updated.tar
+docker save -o spam_updated.tar spam:v2
+
+
+# pull the container your colleague Alice made, spam_alice:v3, from the company's Docker Hub registry, docker.mycompany.com.
+docker pull docker.mycompany.com/spam_alice:v3

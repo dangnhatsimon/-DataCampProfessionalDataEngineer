@@ -1,0 +1,34 @@
+# Run docker
+docker run hello-world
+
+# Running a container in the background
+docker run -d postgres
+
+# listing all containers
+docker ps
+
+# An interactive container
+docker run -it ubuntu
+
+# Run the my_project image detached from your shell while giving it the colleague_project name.
+# To run an image in detached mode use the -d flag, without using this flag the image will run connected to your shell making it unusable.
+docker run -d --name colleague_project my_project
+
+
+#  filtering the running containers using the name colleague_project you gave the container.
+docker ps -f "name=colleague_project"
+
+
+#  logs using the container's name, colleague_project
+docker logs colleague_project
+
+
+# stop the colleague_project container
+docker stop colleague_project
+
+# the container is stopped use the terminal to remove the container.
+docker container rm colleague_project
+
+# Pull the right version, 22.04, of the ubuntu image
+docker pull ubuntu:22.04
+
