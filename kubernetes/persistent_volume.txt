@@ -1,0 +1,24 @@
+# Pods With Attached Storage
+# List all available Storage Classes in the Kubernetes cluster using 
+kubectl get sc
+
+# Apply the Manifest that declares your two Pods, 01_pods.yml
+kubectl apply -f 01_pods.yml
+
+# Observe the Pods' behavior.
+kubectl get pods
+
+# Apply the Manifest to declare the Persistent Volume Claim using the file 02_pvc.yml. This will create a PV dynamically, and attach it to the Pods
+kubectl apply -f 02_pvc.yml
+
+# Apply the manifests 01_pods.yml and 02_pvc.yml.
+kubectl apply -f 01_pods.yml -f 02_pvc.yml
+
+# check the status of your Persistent Volumes (PV).
+kubectl get pv
+
+# Let's find out which Pods are using this PV right now: use the command kubectl describe pv
+c, 
+# and pipe ("|") the output to the command grep "Used By" -B 3 -A 2 to get insights of your Persistent Volume Claim (PVC).
+# Your PVC is Used By: the two Pods datacamp-pod-1 and datacamp-pod-2.
+kubectl describe pvc | grep "Used By" -B 3 -A 2

@@ -1,0 +1,50 @@
+# Deploy a Service
+
+# Now that both Pods and Service are deployed, check that they have the correct endpoints, i.e., the Pods are attached to the service.
+# Use kubectl describe service <your service> to get a description of the service you deployed. The name of your service is "datacamp-service", as specified in the respective Manifest.
+# Note that three endpoints are attached to the service. These are the IPs of your Pods.
+kubectl describe service datacamp-service
+
+Name:              datacamp-service
+Namespace:         default
+Labels:            <none>
+Annotations:       <none>
+Selector:          app=datacamp-app
+Type:              ClusterIP
+IP Family Policy:  SingleStack
+IP Families:       IPv4
+IP:                10.43.129.235
+IPs:               10.43.129.235
+Port:              <unset>  9876/TCP
+TargetPort:        our-svc-port/TCP
+Endpoints:         10.42.0.10:1234,10.42.0.11:1234,10.42.0.9:1234
+Session Affinity:  None
+Events:            <none>
+
+
+
+# Scale your deployment to see how more new Pods are attached to the service as new endpoints.
+# Use kubectl scale deployment <deployment name> --replicas ... to scale the Deployment to 5 replicas
+kubectl scale deployment datacamp-deployment --replicas 5
+
+
+# Check that the new Pods are attached to the Service.
+# Using kubectl describe ... verify that your Service has two additional endpoints.
+kubectl describe service datacamp-service
+
+repl@83ebfb08-3b3e-4257-bae3-bf375eb1d6aa:/$ kubectl describe service datacamp-service
+Name:              datacamp-service
+Namespace:         default
+Labels:            <none>
+Annotations:       <none>
+Selector:          app=datacamp-app
+Type:              ClusterIP
+IP Family Policy:  SingleStack
+IP Families:       IPv4
+IP:                10.43.129.235
+IPs:               10.43.129.235
+Port:              <unset>  9876/TCP
+TargetPort:        our-svc-port/TCP
+Endpoints:         10.42.0.10:1234,10.42.0.11:1234,10.42.0.12:1234 + 2 more...
+Session Affinity:  None
+Events:            <none>

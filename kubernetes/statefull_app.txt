@@ -1,0 +1,17 @@
+# Deploying and Scaling Stateful Apps 1
+kubectl apply -f 01_statefulset.yml
+
+# Check that the Pods have been created using kubectl get pods.
+# Note that each Pod has a unique name, which is predictable and not random like in the case of Deployments.
+kubectl get pods
+
+# Scale up the StatefulSet to 10 Pods using 
+kubectl scale statefulset datacamp-statefulset --replicas 10
+
+
+# Check that the 10 Pods have been created using kubectl get ....
+# Note that each new Pod is created one after the other, again with predictable names.
+kubectl get pods
+
+# Scale down the StatefulSet to 5 Pods using
+kubectl scale statefulset datacamp-statefulset --replicas 5

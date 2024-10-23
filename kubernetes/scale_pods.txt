@@ -1,0 +1,18 @@
+# Scaling and Monitoring a Deployment
+# Create your deployment using kubectl apply ... with the Manifest 01_first_manifest.yml
+kubectl apply -f 01_first_manifest.yml
+
+# Using kubectl, scale up the Deployment to 10 Pods.
+# Remember (or check in the Manifest) that the name of your Deployment is "nginx-deployment"
+kubectl scale deployment nginx-deployment --replicas 10
+
+# Check that the 10 Pods have been created using kubectl get ... with the resource pods
+# Note that each Pod has a unique, but random name.
+kubectl get pods
+
+# Using kubectl, scale down the Deployment to 3 Pods.
+kubectl scale deployment nginx-deployment --replicas 3
+
+
+# Scale the StatefulSet from 6 to 10 replicas. 
+kubectl scale statefulset -n datacamp datacamp-statefulset --replicas 10
